@@ -1,0 +1,2 @@
+# IoC
+Nesnelerin yönetimi
