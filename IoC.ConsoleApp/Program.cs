@@ -14,17 +14,13 @@ namespace IoC.ConsoleApp
         static IGenericService<string> genericService;
         static void Main(string[] args)
         {
-            NinjectUsage();
+            xService = InstanceFactory.GetInstance<IXService>();
+            genericService = InstanceFactory.GetInstance<IGenericService<string>>();
 
             xService.Method1();
             genericService.GenericMethod("metin");
 
             Console.ReadKey();
-        }
-        static void NinjectUsage()
-        {
-            xService = InstanceFactory.GetInstance<IXService>();
-            genericService = InstanceFactory.GetInstance<IGenericService<string>>();
         }
     }
 }
