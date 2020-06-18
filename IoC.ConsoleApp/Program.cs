@@ -1,5 +1,5 @@
 ﻿using IoC.Business.Abstract;
-using IoC.Business.DependencyResolver.Ninject;
+using IoC.Business.DependencyResolver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
